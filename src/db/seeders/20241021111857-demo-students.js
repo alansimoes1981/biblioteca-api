@@ -1,0 +1,116 @@
+"use strict";
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+	async up(queryInterface, Sequelize) {
+		await queryInterface.bulkInsert(
+			"Students",
+			[
+				{
+					id: "c5090b70-0401-4ec3-8170-499d083a575e",
+					name: "Carla Souza",
+					school: "E.M Professora Nilce de Almeida Muniz",
+					class: "401 B",
+					email: "carla@gmail.com",
+					brithday_date: new Date("2010-05-12"),
+					status: true,
+					createdAt: new Date(),
+					updatedAt: new Date(),
+				},
+				{
+					id: "d6d2a5b0-0df1-4dfc-9174-9b67dc11bcb4",
+					name: "Pedro Silva",
+					school: "E.M Professora Nilce de Almeida Muniz",
+					class: "402 A",
+					email: "pedro.silva@gmail.com",
+					brithday_date: new Date("2009-11-25"),
+					status: true,
+					createdAt: new Date(),
+					updatedAt: new Date(),
+				},
+				{
+					id: "b8d7c3c2-1a49-4398-865f-4e1b64881e3a",
+					name: "Maria Oliveira",
+					school: "E.M Professora Nilce de Almeida Muniz",
+					class: "403 C",
+					email: "maria.oliveira@gmail.com",
+					brithday_date: new Date("2008-07-14"),
+					status: true,
+					createdAt: new Date(),
+					updatedAt: new Date(),
+				},
+				{
+					id: "de9385a7-5f7d-49f4-bc1a-7f1b9422f47e",
+					name: "João Ferreira",
+					school: "E.M Professora Nilce de Almeida Muniz",
+					class: "404 A",
+					email: "joao.ferreira@gmail.com",
+					brithday_date: new Date("2010-01-30"),
+					status: true,
+					createdAt: new Date(),
+					updatedAt: new Date(),
+				},
+				{
+					id: "e6d2a5b7-4ed2-4b6c-846e-7d5b4924f8f1",
+					name: "Ana Santos",
+					school: "E.M Professora Nilce de Almeida Muniz",
+					class: "405 B",
+					email: "ana.santos@gmail.com",
+					brithday_date: new Date("2009-04-15"),
+					status: true,
+					createdAt: new Date(),
+					updatedAt: new Date(),
+				},
+				{
+					id: "f9a3c7c5-2ebd-4a34-867a-d5e21c8f63f3",
+					name: "Lucas Costa",
+					school: "E.M Professora Nilce de Almeida Muniz",
+					class: "406 C",
+					email: "lucas.costa@gmail.com",
+					brithday_date: new Date("2008-09-10"),
+					status: true,
+					createdAt: new Date(),
+					updatedAt: new Date(),
+				},
+				{
+					id: "d7e4c7d2-5e82-439e-902a-0f12a4a973c3",
+					name: "Isabela Ribeiro",
+					school: "E.M Professora Nilce de Almeida Muniz",
+					class: "407 A",
+					email: "isabela.ribeiro@gmail.com",
+					brithday_date: new Date("2009-03-20"),
+					status: true,
+					createdAt: new Date(),
+					updatedAt: new Date(),
+				},
+				{
+					id: "f5d3a4c7-3d92-40d6-8564-6f23ac1b8754",
+					name: "Gabriel Martins",
+					school: "E.M Professora Nilce de Almeida Muniz",
+					class: "408 B",
+					email: "gabriel.martins@gmail.com",
+					brithday_date: new Date("2010-06-18"),
+					status: true,
+					createdAt: new Date(),
+					updatedAt: new Date(),
+				},
+				{
+					id: "c2d2a5b9-7de8-4a58-8467-f5e21d9e86f6",
+					name: "Sophia Almeida",
+					school: "E.M Professora Nilce de Almeida Muniz",
+					class: "409 C",
+					email: "sophia.almeida@gmail.com",
+					brithday_date: new Date("2009-08-22"),
+					status: true,
+					createdAt: new Date(),
+					updatedAt: new Date(),
+				},
+			],
+			{}
+		);
+	},
+
+	async down(queryInterface, Sequelize) {
+		await queryInterface.bulkDelete("Students", null, {});
+	},
+};
